@@ -1,0 +1,17 @@
+#include <stdio.h>
+
+int main() {
+    int num,b,c,x;
+    printf("enter a 3 digit number:");
+    scanf("%d",&num);
+    x=num%10;
+    num=num/10;
+    b=num%10;
+    c=num/10;
+    if(x==c)
+       printf("number is palindrome");
+    else
+    printf("number is not palindrome");
+
+    return 0;
+}

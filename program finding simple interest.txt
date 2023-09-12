@@ -1,0 +1,15 @@
+int main() {
+   float p,n,r;
+   float si;
+    printf("enter p:");
+    scanf("%f",&p);
+    printf("enter n:");
+    scanf("%f",&n);
+    printf("enter r:");
+    scanf("%f",&r);
+    si=p*n*r/100;
+    printf("simple interest is:%f",si);
+    
+
+    return 0;
+}

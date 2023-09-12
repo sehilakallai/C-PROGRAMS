@@ -1,0 +1,10 @@
+ float a,b,avg;
+   int sum;
+    printf("enter first number:");
+    scanf("%f",&a);
+    printf("enter second number:");
+    scanf("%f",&b);
+    sum=a+b;
+    avg=sum/2;
+    printf("average of two number is:%f",avg);
+    

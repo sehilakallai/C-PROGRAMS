@@ -1,0 +1,20 @@
+#include <stdio.h>
+
+int main() {
+  int i=2,j=1,n;
+  printf("enter the limit:");
+  scanf("%d",&n);
+  printf("even number are:");
+  while(i<=n)
+  {
+      printf("%d\n",i);
+      i= i+2;
+  }
+  printf("odd number are:");
+  while(j<=n){
+      printf("%d\n",j);
+      j=j+2;
+  }
+
+    return 0;
+}

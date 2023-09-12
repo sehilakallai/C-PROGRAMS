@@ -1,0 +1,28 @@
+#include <stdio.h>
+
+int main() {
+      char g;
+      int salary;
+     printf("Enter F for female, M for male : ");
+     scanf("%c", &g);
+     printf("enter the salary:");
+     scanf("%d",&salary);
+     if(g == 'f')
+     {
+         if(salary>=10000)
+         {
+             printf("salary incremented=%d",salary*100);
+         }
+         else
+         {
+           printf("salary is less than 10000");  
+         }
+     }
+     else if (g == 'm')
+     {
+          printf("Your gender is Male");
+     }
+    
+    
+    return 0;
+}

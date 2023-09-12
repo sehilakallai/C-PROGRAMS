@@ -1,0 +1,18 @@
+#include <stdio.h>
+
+int main() {
+   int i,n;
+   int a=0,b=1;
+   int temp=a+b;
+   printf("enter the limit:");
+   scanf("%d",&n);
+   printf("fibnocci series: %d, %d \n",a,b);
+   for(i=3;i<=n;i++){
+      printf(" %d,",temp);
+       a=b;
+       b=temp;
+       temp=a+b;
+  }
+
+    return 0;
+}

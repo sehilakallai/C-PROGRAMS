@@ -1,0 +1,59 @@
+#include <stdio.h>
+
+int main() {
+    float mark1,mark2,mark3,mark4,mark5;
+    float total,avg;
+    int savg;
+     printf("enter the mark1:");
+     scanf("%f", &mark1);
+     printf("enter the mark2:");
+     scanf("%f", &mark2);
+     printf("enter the mark3:");
+     scanf("%f", &mark3);
+     printf("enter the mark4:");
+     scanf("%f", &mark4);
+     printf("enter the mark5:");
+     scanf("%f", &mark5);
+     total=mark1+mark2+mark3+mark4+mark5;
+     avg=total/5.0;
+     savg=(int)avg/10;
+     //stotal=total/10;
+     //stotal=stotal*100
+     printf("total =%f",total);
+     printf("average=%f",avg);
+     //if(stotal>100){
+        // printf("do not enter the limit");
+     //}
+     //else{
+    switch(savg){
+       case 10:
+       case 9 :
+           printf("\n your grade is: A");
+           break;
+       case 8 :
+           printf("\n your grade is: B" );
+           break;
+       case 7 :
+           printf("\n your grade is: C" );
+           break;
+       case 6 :
+           printf("\n your grade is: D" );
+           break;
+       case 4 :
+           printf("\n your grade is E"); 
+           break;
+      // case 3 :
+        //   printf("\n your grade is C");
+          // break;
+       //case 2 :
+           //printf("\n your grade is D+");
+           //break;
+       //case 1 : 
+           //printf("\n your grade is D");
+           //break;
+       default :
+           printf("\n your grade is:  fail");
+}
+//}
+    return 0;
+}
