@@ -1,0 +1,7 @@
+#include<stdio.h>
+#include<string.h>
+void main(){
+    char ch1[20]={'h','a','i','w','o','r','l','d'};
+    char ch2[20];
+    printf("length of a string is:%s",strcpy(ch2,ch1));
+}

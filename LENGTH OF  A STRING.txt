@@ -1,0 +1,8 @@
+#include<string.h>
+void main(){
+    char ch[11]={'h','a','i','w','o','r','l','d'};
+    char ch1[]="futuralabs";
+    printf("%s\n",ch);
+    printf("%s\n",ch1);
+    printf("length of a string is:%zu",strlen(ch1));
+}

@@ -1,0 +1,27 @@
+#include <stdio.h>
+
+int main() {
+     int arr[100];
+   int i,n,largest,seclargest;
+   printf("enter the size of the array:");
+   scanf("%d",&n);
+   //printf("enter the elements in array:");
+   for(i=0;i<=n;i++){
+      printf("enter the elements in array:");
+      scanf("%d",&arr[i]);
+   }
+   largest=arr[0];
+   seclargest=arr[1];
+   for(i=0;i<=n;i++){
+       if(arr[i]>largest){
+           seclargest=largest;
+           largest=arr[i];
+       }
+       else if(arr[i]>seclargest&&arr[i]!=largest){
+           seclargest=arr[i];
+       }
+   }
+   printf("largest=%d,seclargest=%d",largest,seclargest);
+
+    return 0;
+}
