@@ -1,0 +1,17 @@
+#include <stdio.h>
+#include<ctype.h>
+void stringToLower(char str[])
+{
+    int i=0;
+    while(str[i])
+    {
+        str[i]=tolower((unsigned char)str[i]);
+        i++;
+    }
+}
+int main() {
+  char str[]="HELLO";
+  stringToLower(str);
+  printf("%s",str);
+  return 0;
+}

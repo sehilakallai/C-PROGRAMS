@@ -1,0 +1,22 @@
+#include<stdio.h>
+int linearSearch(int arr[],int n,int key)
+{
+    int i;
+    for(i=0;i<n;i++)
+        if(arr[i]==key)
+        return i;
+        return -1;
+}
+int main()
+{
+    int arr[]={98,87,55,25,3,46};
+    int n,key;
+    n=sizeof(arr)/sizeof(arr[0]);
+    key=3;
+    int position=linearSearch(arr,n,key);
+    if(position==-1)
+      printf("element not found");
+    else
+      printf("element found at position:%d",position+1);
+    return 0;
+}
