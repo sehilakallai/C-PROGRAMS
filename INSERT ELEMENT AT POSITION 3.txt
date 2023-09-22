@@ -1,0 +1,27 @@
+#include <stdio.h>
+int insertElementAtPosition(int arr[],int n,int key,int pos)
+{
+for(int i=n-1;i>=pos;i--)
+    arr[i+1]=arr[i];
+    arr[pos]=key;
+  
+}
+int main() {
+    int arr[]={34,55,23,54,87,99};
+    int n=6,pos;
+    int key=10,i;
+    printf("\n Before insertion:");
+    for(i=0;i<n;i++){
+        printf("%d ",arr[i]);
+    }
+    printf("\n");
+    pos=3;
+    insertElementAtPosition(arr,n,key,pos);
+    n++;
+    printf("\nAfter insertion:");
+    for(i=0;i<n;i++){
+        printf("%d ",arr[i]);
+    }
+   return 0; 
+
+}

@@ -1,0 +1,40 @@
+#include <stdio.h>
+int deleteElementSortedArray(int arr[],int n,int key)
+{
+    int pos=linearSearch(arr,n,key);
+    if(pos==-1)
+    {
+      printf("Element not Found...!!");
+      return n;
+    }  
+    int i;
+    for(i=pos;i<n-1;i++)
+      arr[i]=arr[i+1];
+      return n-1;
+}      
+int linearSearch(int arr[],int n,int key)
+{
+    int i;
+    for(i=0;i<n;i++)
+        if(arr[i]==key)
+        return i;
+        return-1;
+    
+}
+int main() {
+    int arr[]={15,50,35,40,25,78};
+    int n,i,key;
+    n=sizeof(arr)/sizeof(arr[0]);
+    key=25;
+    printf("\n Before deletion:");
+    for(i=0;i<n;i++){
+        printf("%d ",arr[i]);
+    }
+     n=deleteElementSortedArray(arr,n,key);
+     printf("\nAfter deletion:");
+     for(i=0;i<n;i++){
+         printf("%d ",arr[i]);
+     }
+
+    return 0;
+}
